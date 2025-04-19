@@ -27,24 +27,27 @@ const Dashboard = () => {
     setEvents([...events, newEvent]);
   };
   return (
-    <section className='flex'>
-       <div className='flex-[1]'>
-              <LeftNav/>
-       </div>
-       <div className='flex-[8]'>
-              <div><TopNav/></div>
-              <Analitics/>
-              <div className="min-h-screen bg-gray-50 p-5">
-                <div className="flex-start w-full max-w-4xl">
-                  <Calendar 
-                    selectedDate={selectedDate} 
-                    onDateSelect={handleDateSelect} 
-                    events={events}
-                    onAddEvent={addEvent}
-                  />
-                </div>
-              </div>
-       </div>
+    <section className='flex h-screen overflow-hidden'>
+      <div className='flex-[1]'>
+        <LeftNav />
+      </div>
+      <div className='flex-[8]'>
+        <div><TopNav /></div>
+
+        <div className='overflow-y-scroll h-[calc(100vh-64px)]'>
+          <Analitics />
+          <div className="min-h-screen p-5">
+            <div className="flex-start ">
+              <Calendar
+                selectedDate={selectedDate}
+                onDateSelect={handleDateSelect}
+                events={events}
+                onAddEvent={addEvent}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
