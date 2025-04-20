@@ -1,8 +1,20 @@
+// import React from 'react'
+
+// const Tasks = () => {
+//   return (
+//     <div>Tasks</div>
+//   )
+// }
+
+// export default Tasks
+
 import React from 'react'
 
 const Tasks = () => {
   return (
-    <div>Tasks</div>
+    <div className="flex items-center justify-center h-screen">
+      <div>Tasks</div>
+    </div>
   )
 }
 

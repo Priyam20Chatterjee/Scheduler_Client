@@ -1,16 +1,16 @@
 import CalendarDay from './CalendarDay';
 import { isSameDay, isSameMonth } from './calendarUtils';
 
-const CalendarGrid = ({ 
-  monthData, 
-  currentMonth, 
-  selectedDate, 
-  onDateClick, 
+const CalendarGrid = ({
+  monthData,
+  currentMonth,
+  selectedDate,
+  onDateClick,
   events,
   onAddEvent
 }) => {
   // Filter events for the current month view
-  const filteredEvents = events.filter(event => 
+  const filteredEvents = events.filter(event =>
     event.date.getMonth() === currentMonth.getMonth() &&
     event.date.getFullYear() === currentMonth.getFullYear()
   );
@@ -32,9 +32,9 @@ const CalendarGrid = ({
         const isToday = isSameDay(day, new Date());
         const isSelected = selectedDate && isSameDay(day, selectedDate);
         const dateEvents = eventsByDate[day.toDateString()] || [];
-        
+
         return (
-          <CalendarDay 
+          <CalendarDay
             key={index}
             day={day}
             isCurrentMonth={isCurrentMonth}
