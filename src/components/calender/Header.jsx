@@ -10,7 +10,7 @@ const Header = () => {
     <section className='flex justify-between'>
         <div className='mt-5 ml-5 flex flex-col gap-2'>
             <p className='text-black text-3xl font-semibold'>Calender</p>
-            <h6 className='text-gray-500'>Monthly and Weekly View of your tasks.</h6>
+            <h6 className='text-gray-500'>{isToggleMonthWeekView ? "Monthly Overview of your tasks." : "Weekly View of your tasks."}</h6>
         </div>
         <div className='mt-4 mr-3 pl-3 pr-3 rounded-full flex bg-gray-200 gap-3'>  
          
