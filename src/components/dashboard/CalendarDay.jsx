@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import CalendarEvent from './CalendarEvent';
 
-const CalendarDay = ({ 
-  day, 
-  isCurrentMonth, 
-  isToday, 
-  isSelected, 
+const CalendarDay = ({
+  day,
+  isCurrentMonth,
+  isToday,
+  isSelected,
   events = [],
   onClick,
   onAddEvent
@@ -41,7 +41,7 @@ const CalendarDay = ({
   `;
 
   return (
-    <div 
+    <div
       className={dayClasses}
       onClick={handleClick}
       onDoubleClick={handleDoubleClick}
@@ -56,7 +56,7 @@ const CalendarDay = ({
               ))}
             </div>
           )}
-          
+
           {showAddEvent && (
             <form onSubmit={handleAddEvent} className="mt-1">
               <input

@@ -1,9 +1,21 @@
+// import React from 'react'
+
+// const Calender = () => {
+//   return (
+//     <div>Calender</div>
+//   )
+// }
+
+// export default Calender
+
 import React from 'react'
 
-const Calender = () => {
+const Calendar = () => {
   return (
-    <div>Calender</div>
+    <div className="flex items-center justify-center h-screen">
+      <div>Calendar</div>
+    </div>
   )
 }
 
-export default Calender
+export default Calendar
