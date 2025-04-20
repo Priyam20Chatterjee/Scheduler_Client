@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import CalendarHeader from './CalendarHeader';
 import CalendarGrid from './CalendarGrid';
-import { getMonthData } from './calendarUtils';
+import { getMonthData } from '../../utils/calendarUtils';
 
-const Calendar = ({ selectedDate = new Date(), onDateSelect, events = [], onAddEvent }) => {
+const CommonCalendar = ({ selectedDate = new Date(), onDateSelect, events = [], onAddEvent }) => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const [monthData, setMonthData] = useState([]);
   
@@ -89,4 +89,4 @@ const Calendar = ({ selectedDate = new Date(), onDateSelect, events = [], onAddE
   );
 };
 
-export default Calendar;
+export default CommonCalendar;

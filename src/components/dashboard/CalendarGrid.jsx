@@ -1,5 +1,5 @@
 import CalendarDay from './CalendarDay';
-import { isSameDay, isSameMonth } from './calendarUtils';
+import { isSameDay, isSameMonth } from '../../utils/calendarUtils';
 
 const CalendarGrid = ({ 
   monthData, 

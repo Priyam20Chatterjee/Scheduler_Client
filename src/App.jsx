@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router"
 import LeftNav from "./components/shared/LeftNav.jsx"
 import Dashboard from "./pages/Dashboard.jsx"
 import Tasks from "./pages/Tasks.jsx"
-import Calender from "./pages/Calender.jsx"
+import Calender from "./pages/Calendar.jsx"
 import Completed from "./pages/Completed.jsx"
 
 function App() {

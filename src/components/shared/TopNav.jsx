@@ -19,8 +19,6 @@ const TopNav = () => {
           <FaRegUser size={20}/>
        </div>
      </section>
-
-
   )
 }
 

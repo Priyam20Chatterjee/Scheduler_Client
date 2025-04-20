@@ -3,14 +3,12 @@ import { useState } from 'react'
 import LeftNav from '../components/shared/LeftNav'
 import TopNav from '../components/shared/TopNav'
 import Analitics from '../components/dashboard/Analitics'
-import Calendar from '../components/dashboard/Calendar'
+import Calendar from '../components/dashboard/CommonCalendar'
 
 const Dashboard = () => {
 
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [events, setEvents] = useState([
-    { id: 1, date: new Date(2025, 3, 18), time: '11:43 PM', title: 'lol', color: 'amber' }
-  ]);
+  const [events, setEvents] = useState([]);
 
   const handleDateSelect = (date) => {
     setSelectedDate(date);
